@@ -1,7 +1,6 @@
 import BarbershopItem from "@/app/components/barbershop-item"
 import Header from "@/app/components/header"
 import { Button } from "@/app/components/ui/button"
-import { Card, CardContent } from "@/app/components/ui/card"
 import { Input } from "@/app/components/ui/input"
 import { db } from "@/app/lib/prisma"
 import { SearchIcon } from "lucide-react"
@@ -73,15 +72,6 @@ const Home = async () => {
           ))}
         </div>
       </div>
-      <footer>
-        <Card>
-          <CardContent className="px-5 py-6">
-            <p className="text-sm text-gray-400">
-              © 2025 Copyright <span className="font-bold">FSW Barber</span>
-            </p>
-          </CardContent>
-        </Card>
-      </footer>
     </div>
   )
 }
