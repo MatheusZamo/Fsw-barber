@@ -1,9 +1,10 @@
 import Image from "next/image"
-import { Card, CardContent } from "./ui/card"
-import { Sheet, SheetTrigger } from "@/components/ui/sheet"
-import { Button } from "./ui/button"
+import { Card, CardContent } from "../../components/ui/card"
+
+import { Button } from "../../components/ui/button"
 import { MenuIcon } from "lucide-react"
 import SidebarSheet from "./sidebar-sheet"
+import { Sheet, SheetTrigger } from "@/components/ui/sheet"
 
 const Header = () => {
   return (

@@ -1,13 +1,13 @@
-import PhoneItem from "@/app/components/phone-item"
-import ServiceItem from "@/app/components/service-item"
-import SidebarSheet from "@/app/components/sidebar-sheet"
-import { Button } from "@/app/components/ui/button"
-import { db } from "@/app/lib/prisma"
+import { db } from "@/lib/prisma"
 import { Sheet, SheetTrigger } from "@/components/ui/sheet"
 import { ChevronLeftIcon, MapPinIcon, MenuIcon, StarIcon } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 import { notFound } from "next/navigation"
+import SidebarSheet from "@/app/components/sidebar-sheet"
+import ServiceItem from "@/app/components/service-item"
+import { Button } from "@/components/ui/button"
+import PhoneItem from "@/app/components/phone-item"
 
 interface BarbershopPageProps {
   params: {
