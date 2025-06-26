@@ -27,25 +27,28 @@ const Home = async () => {
   return (
     <div>
       <Header />
-      <div className="p-5">
-        <h2 className="text-xl font-bold">
-          Olá, {session?.user ? session.user.name?.split(" ")[0] : "Bem Vindo"}!
-        </h2>
-        <p>
-          <span className="capitalize">
-            {format(new Date(), "EEEE, dd", { locale: ptBR })}
-          </span>
-          <span>&nbsp;de&nbsp;</span>
-          <span className="capitalize">
-            {format(new Date(), "MMMM", { locale: ptBR })}
-          </span>
-        </p>
+      <div className="mx-auto max-w-5xl p-5 lg:flex lg:w-full lg:flex-col lg:justify-center">
+        <div>
+          <h2 className="text-xl font-bold">
+            Olá,{" "}
+            {session?.user ? session.user.name?.split(" ")[0] : "Bem Vindo"}!
+          </h2>
+          <p>
+            <span className="capitalize">
+              {format(new Date(), "EEEE, dd", { locale: ptBR })}
+            </span>
+            <span>&nbsp;de&nbsp;</span>
+            <span className="capitalize">
+              {format(new Date(), "MMMM", { locale: ptBR })}
+            </span>
+          </p>
 
-        <div className="mt-6">
-          <Search />
+          <div className="mt-6 lg:max-w-xl">
+            <Search />
+          </div>
         </div>
 
-        <div className="mt-6 flex gap-3 overflow-x-scroll [&::-webkit-scrollbar]:hidden">
+        <div className="mt-6 flex gap-3 overflow-x-scroll lg:hidden [&::-webkit-scrollbar]:hidden">
           {quickSearchOptions.map((option) => (
             <Button
               className="gap-2"
@@ -66,7 +69,7 @@ const Home = async () => {
           ))}
         </div>
 
-        <div className="relative mt-6 h-[150px] w-full">
+        <div className="relative mt-6 h-[150px] w-full lg:hidden">
           <Image
             alt="Agende nas melhores com FSW Barber"
             src="Banner.svg"
