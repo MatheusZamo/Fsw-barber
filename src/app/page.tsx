@@ -12,6 +12,7 @@ import { getServerSession } from "next-auth"
 import { format } from "date-fns"
 import { ptBR } from "date-fns/locale"
 import { getConfirmedBookings } from "./data/get-confirmed-bookings"
+import Carousel from "./components/carousel"
 
 const Home = async () => {
   const session = await getServerSession(authOptions)
@@ -43,7 +44,7 @@ const Home = async () => {
             </span>
           </p>
 
-          <div className="mt-6 lg:max-w-xl">
+          <div className="mt-6 max-w-xl">
             <Search />
           </div>
         </div>
@@ -79,39 +80,27 @@ const Home = async () => {
         </div>
 
         {confirmedBookings.length > 0 && (
-          <>
-            <h2 className="mb-3 mt-6 text-xs font-bold uppercase text-gray-400">
-              Agendamentos
-            </h2>
-
-            <div className="flex gap-3 overflow-x-auto [&::-webkit-scrollbar]:hidden">
-              {confirmedBookings.map((booking) => (
-                <BookingItem
-                  key={booking.id}
-                  booking={JSON.parse(JSON.stringify(booking))}
-                />
-              ))}
-            </div>
-          </>
+          <Carousel title="Agendamentos" className="mt-6">
+            {confirmedBookings.map((booking) => (
+              <BookingItem
+                key={booking.id}
+                booking={JSON.parse(JSON.stringify(booking))}
+              />
+            ))}
+          </Carousel>
         )}
 
-        <h2 className="mb-3 mt-6 text-xs font-bold uppercase text-gray-400">
-          Recomendados
-        </h2>
-        <div className="flex gap-4 overflow-auto [&::-webkit-scrollbar]:hidden">
+        <Carousel title="Recomendados" className="mt-6">
           {barbershops.map((barbershop) => (
             <BarbershopItem key={barbershop.id} barbershop={barbershop} />
           ))}
-        </div>
+        </Carousel>
 
-        <h2 className="mb-3 mt-6 text-xs font-bold uppercase text-gray-400">
-          Populares
-        </h2>
-        <div className="flex gap-4 overflow-auto [&::-webkit-scrollbar]:hidden">
+        <Carousel title="Populares" className="mt-6">
           {popularBarbershops.map((barbershop) => (
             <BarbershopItem key={barbershop.id} barbershop={barbershop} />
           ))}
-        </div>
+        </Carousel>
       </div>
     </div>
   )
