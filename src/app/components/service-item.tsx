@@ -192,12 +192,12 @@ const ServiceItem = ({ service, barbershop }: ServiceItemProps) => {
                 >
                   Reservar
                 </Button>
-                <SheetContent className="px-0">
+                <SheetContent className="px-0 lg:overflow-y-auto">
                   <SheetHeader>
-                    <SheetTitle>Fazer Reserva</SheetTitle>
+                    <SheetTitle className="lg:pl-5">Fazer Reserva</SheetTitle>
                   </SheetHeader>
 
-                  <div className="border-b border-solid px-6 py-5">
+                  <div className="border-b border-solid px-6 py-5 lg:pl-16">
                     <Calendar
                       mode="single"
                       locale={ptBR}
@@ -267,6 +267,7 @@ const ServiceItem = ({ service, barbershop }: ServiceItemProps) => {
                       <Button
                         onClick={handleCreateBooking}
                         disabled={!selectedDay || !selectedTime}
+                        className="lg:w-full"
                       >
                         Confirmar
                       </Button>
