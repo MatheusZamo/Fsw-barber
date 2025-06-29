@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 💈 FSW Barber
+> **Plataforma moderna para barbeiros e clientes**
+Uma aplicação web completa e intuitiva que conecta clientes e barbeiros, oferecendo uma experiência fluida para agendamento de serviços. O FSW Barber resolve a complexidade no gerenciamento de barbearias, permitindo que usuários encontrem estabelecimentos próximos, visualizem serviços disponíveis e façam agendamentos de forma prática e integrada.
 
-## Getting Started
+---
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+![Image](https://github.com/user-attachments/assets/6ca63021-f350-4d52-bbb5-8263a1ea9134)
+![Image](https://github.com/user-attachments/assets/a9071a0c-4be3-4d68-b46e-2a85a72dbe99)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+![Image](https://github.com/user-attachments/assets/75605bcf-d0b5-49d5-8604-f1f33df26b3d)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠️ Tecnologias Utilizadas
 
-## Learn More
+Este projeto foi desenvolvido com uma **stack moderna e eficiente**:
 
-To learn more about Next.js, take a look at the following resources:
+- **Next.js**
+- **React**
+- **TypeScript**
+- **Tailwind CSS**
+- **Shadcn/ui**
+- **Prisma ORM**
+- **PostgreSQL**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📞 Contato & Suporte
 
-## Deploy on Vercel
+**Desenvolvido com ❤️ para revolucionar o mercado de barbearias**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- 🌐 Website: [https://fsw-barber-five-eta.vercel.app/]
+- 📱 LinkedIn: [https://www.linkedin.com/in/matheuszamo/]
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+<div align="center">
+
+### ⭐ Se este projeto foi útil, deixe uma estrela!
+
+**FSW Barber - Transformando a experiência de agendamento com tecnologia de ponta** 💈✨
+
+</div>
